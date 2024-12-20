@@ -1,5 +1,4 @@
 // Menu.cpp : Defines the entry point for the console application.
-//
 
 #include <iostream>
 #include <string>
@@ -40,18 +39,14 @@ int main()
            assert( dInt.size( ) == 0 );
            assert( dInt.get( -10, x ) == false );
            assert( dInt.isEmpty( )  );
-//
            s = "Hello";
            dString.addToFront( s );
-    //me: dString.addToFront( s );
            s = "World!";
            dString.addToRear( s );
-    //me: dString.addToRear( s );
     cout << dString.printItems();
            s = "Howard";
            assert( dString.deleteItem( s ) == false );
     cout << dString.printItems();
-    //me: cout << dString.size();
            assert( dString.size( ) == 2 );
            assert( dString.get( -10, s ) == false );
            assert( dString.isEmpty( ) == false );
